@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ODALAR, PANSIYON } from "../constants";
+import { ODALAR } from "../constants";
 import "./Rezervasyon.css";
 
 function Rezervasyon() {
