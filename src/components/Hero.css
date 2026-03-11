@@ -1,0 +1,15 @@
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+.hero__bg { position: absolute; inset: 0; }
+.hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero__overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15,15,30,0.75) 0%, rgba(26,26,46,0.55) 60%, rgba(15,15,30,0.4) 100%); }
+.hero__ic { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; width: 100%; padding: 100px 24px 60px; }
+.hero__icerik { max-width: 640px; }
+.hero__baslik { font-size: 52px; font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 20px; }
+.hero__aciklama { font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 36px; max-width: 500px; }
+.hero__btn { font-size: 15px; padding: 16px 36px; }
+.hero__bilgi-kartlar { display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap; }
+.hero__bilgi-kart { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.12); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.18); border-radius: 14px; padding: 14px 20px; }
+.hero__bilgi-ikon { font-size: 22px; }
+.hero__bilgi-etiket { font-size: 11px; color: rgba(255,255,255,0.6); font-weight: 500; letter-spacing: 0.5px; }
+.hero__bilgi-deger { font-size: 14px; font-weight: 700; color: #fff; }
+@media (max-width: 768px) { .hero__baslik { font-size: 34px; } .hero__aciklama { font-size: 15px; } }

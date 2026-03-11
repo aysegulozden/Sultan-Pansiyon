@@ -1,0 +1,13 @@
+.sss { background: var(--acik-gri); }
+.sss__ust { text-align: center; margin-bottom: 48px; }
+.sss__ust .bolum__baslik { margin: 0 auto; }
+.sss__liste { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.sss-item { background: #fff; border-radius: 14px; border: 1px solid var(--sinir); overflow: hidden; transition: all 0.2s; }
+.sss-item--acik { border-color: var(--turuncu); box-shadow: 0 4px 16px rgba(196,124,43,0.1); }
+.sss-item__soru { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; font-size: 15px; font-weight: 600; color: var(--lacivert); background: none; border: none; cursor: pointer; text-align: left; gap: 16px; }
+.sss-item__soru:hover { color: var(--turuncu); }
+.sss-item--acik .sss-item__soru { color: var(--turuncu); }
+.sss-item__ikon { font-size: 18px; color: var(--yazi-acik); flex-shrink: 0; }
+.sss-item__cevap { padding: 0 24px 20px; font-size: 14px; color: var(--yazi-mid); line-height: 1.8; border-top: 1px solid var(--sinir); padding-top: 16px; }
+.sss__alt { text-align: center; margin-top: 48px; }
+.sss__alt p { font-size: 16px; color: var(--yazi-mid); margin-bottom: 20px; }

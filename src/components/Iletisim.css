@@ -1,0 +1,22 @@
+.iletisim { background: #fff; }
+.iletisim__ust { text-align: center; margin-bottom: 56px; }
+.iletisim__ust .bolum__baslik { margin: 0 auto; }
+.iletisim__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; }
+.iletisim__alt-baslik { font-size: 18px; font-weight: 700; color: var(--lacivert); margin-bottom: 24px; }
+.iletisim__bilgiler { display: flex; flex-direction: column; gap: 20px; margin-bottom: 32px; }
+.iletisim__bilgi { display: flex; align-items: flex-start; gap: 16px; }
+.iletisim__bilgi-ikon { width: 42px; height: 42px; background: var(--turuncu-cok-acik); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.iletisim__bilgi-baslik { font-weight: 600; font-size: 14px; color: var(--lacivert); margin-bottom: 4px; }
+.iletisim__bilgi-deger { font-size: 13px; color: var(--yazi-mid); }
+.iletisim__sosyal-baslik { font-size: 13px; font-weight: 600; color: var(--yazi-mid); margin-bottom: 12px; }
+.iletisim__sosyal-ikonlar { display: flex; gap: 10px; }
+.iletisim__sosyal-ikon { width: 38px; height: 38px; border-radius: 10px; background: var(--acik-gri); border: 1px solid var(--sinir); display: flex; align-items: center; justify-content: center; font-size: 16px; cursor: pointer; transition: all 0.2s; }
+.iletisim__sosyal-ikon:hover { background: var(--turuncu); color: #fff; border-color: var(--turuncu); }
+.iletisim__form-kart { background: var(--acik-gri); border-radius: 20px; padding: 32px; }
+.form-grup { margin-bottom: 16px; }
+.form-grup label { display: block; font-size: 12px; font-weight: 600; color: var(--yazi-mid); margin-bottom: 6px; }
+.r-input { width: 100%; padding: 11px 14px; border: 1.5px solid var(--sinir); border-radius: 10px; font-size: 14px; font-family: inherit; color: var(--yazi); background: #fff; transition: border-color 0.2s; }
+.r-input:focus { outline: none; border-color: var(--turuncu); }
+.r-textarea { resize: vertical; min-height: 100px; }
+.r-karakter { font-size: 11px; color: var(--yazi-acik); text-align: right; margin-top: 4px; }
+@media (max-width: 900px) { .iletisim__grid { grid-template-columns: 1fr; } }

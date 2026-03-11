@@ -1,0 +1,11 @@
+.hizmetler { background: var(--acik-gri); }
+.hizmetler__ust { text-align: center; margin-bottom: 56px; }
+.hizmetler__ust .bolum__baslik { margin: 0 auto; }
+.hizmetler__ust .bolum__aciklama { max-width: 480px; margin: 0 auto; }
+.hizmetler__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.hizmet-karti { padding: 28px 24px; }
+.hizmet-karti__ikon { font-size: 28px; margin-bottom: 16px; width: 52px; height: 52px; background: var(--turuncu-cok-acik); border-radius: 14px; display: flex; align-items: center; justify-content: center; }
+.hizmet-karti__baslik { font-size: 15px; font-weight: 700; color: var(--lacivert); margin-bottom: 8px; }
+.hizmet-karti__aciklama { font-size: 13px; color: var(--yazi-mid); line-height: 1.7; }
+@media (max-width: 900px) { .hizmetler__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .hizmetler__grid { grid-template-columns: 1fr; } }

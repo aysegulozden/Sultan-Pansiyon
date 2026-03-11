@@ -1,0 +1,17 @@
+.footer { background: var(--lacivert); color: rgba(255,255,255,0.6); padding: 64px 0 24px; }
+.footer__ic { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.footer__ust { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 64px; margin-bottom: 48px; }
+.footer__logo { font-size: 40px; margin-bottom: 16px; }
+.footer__aciklama { font-size: 14px; line-height: 1.8; max-width: 280px; margin-bottom: 24px; }
+.footer__sosyal { display: flex; gap: 10px; }
+.footer__sosyal-btn { width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.7); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.footer__sosyal-btn:hover { background: var(--turuncu); border-color: var(--turuncu); color: #fff; }
+.footer__baslik { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 20px; letter-spacing: 0.5px; }
+.footer__iletisim-item { font-size: 13px; line-height: 1.8; margin-bottom: 12px; }
+.footer__link { display: block; font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 10px; background: none; border: none; cursor: pointer; padding: 0; text-align: left; transition: color 0.2s; }
+.footer__link:hover { color: #fff; }
+.footer__alt { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; }
+.footer__alt-linkler { display: flex; gap: 24px; }
+.footer__alt-link { font-size: 13px; color: rgba(255,255,255,0.5); background: none; border: none; cursor: pointer; transition: color 0.2s; }
+.footer__alt-link:hover { color: #fff; }
+@media (max-width: 768px) { .footer__ust { grid-template-columns: 1fr; gap: 32px; } .footer__alt { flex-direction: column; text-align: center; } }

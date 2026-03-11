@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar      from "./components/Navbar";
+import Hero        from "./components/Hero";
+import Bizim       from "./components/Bizim";
+import Odalar      from "./components/Odalar";
+import Hizmetler   from "./components/Hizmetler";
+import Rezervasyon from "./components/Rezervasyon";
+import Yorumlar    from "./components/Yorumlar";
+import Iletisim    from "./components/Iletisim";
+import SSS         from "./components/SSS";
+import Footer      from "./components/Footer";
+import { PANSIYON } from "./constants";
+import "./styles/global.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Bizim />
+      <Odalar />
+      <Hizmetler />
+      <Rezervasyon />
+      <Yorumlar />
+      <Iletisim />
+      <SSS />
+      <Footer />
+
+      {/* Sabit WhatsApp butonu */}
+      <a href={PANSIYON.whatsapp} target="_blank" rel="noreferrer" className="whatsapp-btn">
+        <div className="whatsapp-btn__ikon">💬</div>
+        Bizimle konuşun
+      </a>
+    </>
   );
 }
 

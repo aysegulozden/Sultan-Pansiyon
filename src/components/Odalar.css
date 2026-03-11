@@ -1,0 +1,21 @@
+.odalar { background: #fff; }
+.odalar__ust { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; gap: 24px; flex-wrap: wrap; }
+.odalar__aciklama { max-width: 380px; }
+.odalar__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.oda-karti { overflow: hidden; }
+.oda-karti__gorsel-wrap { position: relative; height: 220px; overflow: hidden; }
+.oda-karti__gorsel { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.oda-karti:hover .oda-karti__gorsel { transform: scale(1.05); }
+.oda-karti__durum { position: absolute; top: 12px; left: 12px; padding: 5px 14px; border-radius: 50px; font-size: 12px; font-weight: 600; }
+.durum-bos { background: var(--basari); color: #fff; }
+.durum-dolu { background: var(--tehlike); color: #fff; }
+.oda-karti__icerik { padding: 20px; }
+.oda-karti__ad { font-size: 18px; font-weight: 700; color: var(--lacivert); margin-bottom: 8px; }
+.oda-karti__aciklama { font-size: 13px; color: var(--yazi-mid); line-height: 1.7; margin-bottom: 14px; }
+.oda-karti__taglar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
+.oda-karti__tag { font-size: 11px; background: #f5f5f5; color: var(--yazi-mid); padding: 4px 12px; border-radius: 50px; border: 1px solid #eee; }
+.oda-karti__alt { display: flex; align-items: center; justify-content: space-between; }
+.oda-karti__fiyat-tl { font-size: 20px; font-weight: 800; color: var(--turuncu); }
+.oda-karti__fiyat-gece { font-size: 13px; color: var(--yazi-acik); margin-left: 4px; }
+@media (max-width: 900px) { .odalar__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .odalar__grid { grid-template-columns: 1fr; } .odalar__ust { flex-direction: column; } }

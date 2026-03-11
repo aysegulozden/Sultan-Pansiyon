@@ -1,0 +1,14 @@
+.yorumlar { background: var(--krem); }
+.yorumlar__ust { margin-bottom: 48px; }
+.yorumlar__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.yorum-karti { padding: 24px; }
+.yorum-karti__ust { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.yorum-karti__avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--turuncu); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; flex-shrink: 0; }
+.yorum-karti__ad { font-weight: 700; font-size: 15px; color: var(--lacivert); }
+.yorum-karti__kullanici { font-size: 12px; color: var(--yazi-acik); margin-top: 2px; }
+.yorum-karti__metin { font-size: 13px; color: var(--yazi-mid); line-height: 1.8; margin-bottom: 16px; font-style: italic; }
+.yildizlar { display: flex; gap: 3px; }
+.yildiz { font-size: 16px; color: #ddd; }
+.yildiz--dolu { color: var(--turuncu); }
+@media (max-width: 900px) { .yorumlar__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .yorumlar__grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --turuncu: #c47c2b;
+  --turuncu-acik: #e8973a;
+  --turuncu-cok-acik: #fef3e2;
+  --lacivert: #1a1a2e;
+  --lacivert-mid: #2d2d44;
+  --beyaz: #ffffff;
+  --krem: #fafaf7;
+  --acik-gri: #f8f8f8;
+  --sinir: #eeeeee;
+  --yazi: #1a1a2e;
+  --yazi-mid: #555;
+  --yazi-acik: #999;
+  --basari: #22c55e;
+  --tehlike: #ef4444;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: var(--yazi); background: #fff; overflow-x: hidden; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+img { max-width: 100%; display: block; object-fit: cover; }
+
+/* BUTONLAR */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 50px; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.25s; border: none; }
+.btn-turuncu { background: var(--turuncu); color: #fff; box-shadow: 0 4px 16px rgba(196,124,43,0.35); }
+.btn-turuncu:hover { background: var(--turuncu-acik); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(196,124,43,0.4); }
+.btn-lacivert { background: var(--lacivert); color: #fff; }
+.btn-lacivert:hover { background: var(--lacivert-mid); transform: translateY(-2px); }
+.btn-outline { background: transparent; color: var(--lacivert); border: 2px solid var(--lacivert); }
+.btn-outline:hover { background: var(--lacivert); color: #fff; }
+.btn-sm { padding: 10px 20px; font-size: 13px; }
+
+/* BÖLÜM */
+.bolum { padding: 88px 0; }
+.bolum__ic { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.bolum__etiket { display: inline-block; background: var(--turuncu-cok-acik); color: var(--turuncu); border: 1px solid rgba(196,124,43,0.2); border-radius: 50px; padding: 5px 16px; font-size: 12px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 16px; }
+.bolum__baslik { font-size: 38px; font-weight: 800; color: var(--lacivert); line-height: 1.2; margin-bottom: 16px; }
+.bolum__aciklama { font-size: 15px; color: var(--yazi-mid); line-height: 1.8; }
+
+/* KART */
+.kart { background: #fff; border-radius: 16px; border: 1px solid var(--sinir); transition: all 0.3s; }
+.kart:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.1); transform: translateY(-4px); }
+
+/* WHATSAPP BUTONU */
+.whatsapp-btn {
+  position: fixed; bottom: 24px; right: 24px; z-index: 999;
+  background: var(--turuncu); color: #fff;
+  border-radius: 50px; padding: 12px 20px;
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 600; font-size: 14px;
+  box-shadow: 0 8px 24px rgba(196,124,43,0.4);
+  cursor: pointer; transition: all 0.3s; border: none;
+}
+.whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(196,124,43,0.5); }
+.whatsapp-btn__ikon { width: 36px; height: 36px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+
+@media (max-width: 768px) {
+  .bolum { padding: 64px 0; }
+  .bolum__baslik { font-size: 28px; }
+}

@@ -1,0 +1,19 @@
+.rezervasyon { background: var(--krem); }
+.rezervasyon__grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
+.rezervasyon__baslik { font-size: 52px !important; line-height: 1.1 !important; }
+.rezervasyon__gorsel-wrap { border-radius: 20px; overflow: hidden; margin-top: 32px; }
+.rezervasyon__gorsel { width: 100%; height: 280px; object-fit: cover; }
+.rezervasyon__form-kart { background: #fff; border-radius: 20px; padding: 36px; box-shadow: 0 8px 40px rgba(0,0,0,0.08); border: 1px solid var(--sinir); }
+.rezervasyon__form-baslik { font-size: 20px; font-weight: 700; color: var(--lacivert); margin-bottom: 8px; text-align: center; }
+.rezervasyon__form-aciklama { font-size: 13px; color: var(--yazi-mid); text-align: center; line-height: 1.7; margin-bottom: 24px; }
+.rezervasyon__alan-tek { margin-bottom: 16px; }
+.rezervasyon__alan-iki { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.rezervasyon__alan-tek label,
+.rezervasyon__alan-iki label { display: block; font-size: 12px; font-weight: 600; color: var(--yazi-mid); margin-bottom: 6px; }
+.r-input { width: 100%; padding: 11px 14px; border: 1.5px solid var(--sinir); border-radius: 10px; font-size: 14px; font-family: inherit; color: var(--yazi); background: #fff; transition: border-color 0.2s; }
+.r-input:focus { outline: none; border-color: var(--turuncu); }
+.r-textarea { resize: vertical; min-height: 90px; }
+.r-karakter { font-size: 11px; color: var(--yazi-acik); text-align: right; margin-top: 4px; }
+.rezervasyon__gonder { width: 100%; justify-content: center; font-size: 15px; padding: 15px; border-radius: 12px !important; margin-top: 8px; }
+@media (max-width: 900px) { .rezervasyon__grid { grid-template-columns: 1fr; } .rezervasyon__baslik { font-size: 36px !important; } }
+@media (max-width: 480px) { .rezervasyon__alan-iki { grid-template-columns: 1fr; } }
