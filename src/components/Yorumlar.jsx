@@ -1,5 +1,5 @@
 import { YORUMLAR } from "../constants";
-import "./Yorumlar.css";
+import "../css/Yorumlar.css";
 
 function YildizPuani({ puan }) {
   return (

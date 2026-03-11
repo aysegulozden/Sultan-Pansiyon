@@ -1,5 +1,5 @@
 import { PANSIYON } from "../constants";
-import "./Bizim.css";
+import "../css/Bizim.css";
 
 function Bizim() {
   return (

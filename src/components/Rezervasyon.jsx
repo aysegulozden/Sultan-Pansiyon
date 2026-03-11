@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ODALAR } from "../constants";
-import "./Rezervasyon.css";
+import "../css/Rezervasyon.css";
 
 function Rezervasyon() {
   const [form, setForm] = useState({ ad: "", email: "", tel: "", giris: "", cikis: "", kisi: "2 Kişi", oda: "", istek: "" });

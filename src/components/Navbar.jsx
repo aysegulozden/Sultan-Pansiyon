@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { PANSIYON } from "../constants";
-import "./Navbar.css";
+import "../css/Navbar.css";
 
 function Navbar() {
   const [scroll, setScroll] = useState(false);

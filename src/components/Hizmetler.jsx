@@ -1,5 +1,5 @@
 import { HIZMETLER } from "../constants";
-import "./Hizmetler.css";
+import "../css/Hizmetler.css";
 
 function Hizmetler() {
   return (

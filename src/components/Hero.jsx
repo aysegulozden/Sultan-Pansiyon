@@ -1,5 +1,5 @@
 import { PANSIYON } from "../constants";
-import "./Hero.css";
+import "../css/Hero.css";
 
 function Hero() {
   const git = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

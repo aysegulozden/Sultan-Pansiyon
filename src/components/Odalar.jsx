@@ -1,5 +1,5 @@
 import { ODALAR } from "../constants";
-import "./Odalar.css";
+import "../css/Odalar.css";
 
 function OdaKarti({ oda }) {
   return (

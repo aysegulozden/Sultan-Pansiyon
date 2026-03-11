@@ -1,5 +1,5 @@
 import { PANSIYON } from "../constants";
-import "./Footer.css";
+import "../css/Footer.css";
 
 function Footer() {
   const git = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

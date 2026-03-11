@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PANSIYON } from "../constants";
-import "./Iletisim.css";
+import "../css/Iletisim.css";
 
 function Iletisim() {
   const [form, setForm] = useState({ ad: "", email: "", konu: "", mesaj: "" });

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SSS } from "../constants";
-import "./SSS.css";
+import "../css/SSS.css";
 
 function SSSSorusu({ soru, cevap }) {
   const [acik, setAcik] = useState(false);
